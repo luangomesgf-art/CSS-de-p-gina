@@ -1,0 +1,354 @@
+body{
+    background-color: #F9F6F1;
+}
+p.slogan{
+    padding-top: 20px;
+    color: #A65851;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+header h1{
+    color: #5c2c27;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    font-size: 45px;
+    padding-top: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 15px;
+}
+
+nav a{
+    gap: 32px;
+    color: #302926;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.categoria{
+     padding-top: 50px;
+    color: #A65851;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: small;
+    margin-top: 5px;
+}
+
+p.text-center{
+    text-align: center;
+}
+
+/* caixa geral de cada section da home */
+main section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* section inicio (texto + imagem grande) */
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid #e5ddd0;
+}
+
+#inicio article{
+    flex: 1;
+}
+
+#inicio p.categoria{
+    text-align: left;
+}
+
+#inicio h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3d2a25;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+#inicio p{
+    color: #555555;
+    line-height: 1.6;
+}
+
+#inicio figure{
+    flex: 1;
+    margin: 0;
+}
+
+#inicio img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#inicio figcaption{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #888888;
+}
+
+/* botao vermelho "Conheça as receitas" */
+.botao{
+    display: inline-block;
+    background-color: #8c3d35;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.botao:hover{
+    background-color: #6f2f28;
+}
+
+/* section escolhas (receitas da semana) */
+#escolhas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#escolhas header{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#escolhas article{
+    flex: 1 1 300px;
+}
+
+#escolhas img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#escolhas figcaption{
+    margin-top: 8px;
+    font-size: 13px;
+    color: #888888;
+}
+
+#escolhas h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3d2a25;
+    margin: 10px 0 5px 0;
+}
+
+#escolhas p{
+    color: #555555;
+}
+
+#escolhas a{
+    color: #8c3d35;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* section manifesto (caixa com a frase) */
+#manifesto{
+    background-color: #ded2c4;
+    border-radius: 12px;
+    text-align: center;
+    padding: 50px 40px;
+}
+
+#manifesto blockquote{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: #3d2a25;
+    line-height: 1.6;
+}
+
+/* section dicas-home */
+#dicas-home{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    border-top: 1px solid #e5ddd0;
+}
+
+#dicas-home article{
+    flex: 1 1 300px;
+}
+
+#dicas-home h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3d2a25;
+}
+
+#dicas-home p{
+    color: #555555;
+}
+
+#dicas-home article a{
+    color: #8c3d35;
+    font-weight: bold;
+}
+
+#dicas-home aside{
+    flex: 1 1 250px;
+    background-color: #ffffff;
+    border-left: 4px solid #8c3d35;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+#dicas-home aside h3{
+    margin-top: 0;
+    color: #3d2a25;
+}
+
+#dicas-home aside p{
+    margin-bottom: 0;
+    color: #555555;
+}
+
+/* section newsletter */
+#newsletter{
+    border-top: 1px solid #e5ddd0;
+    text-align: center;
+}
+
+#newsletter header{
+    margin-bottom: 20px;
+}
+
+#newsletter form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#newsletter label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #3d2a25;
+}
+
+#newsletter input{
+    padding: 10px;
+    border: 1px solid #d8cfc2;
+    border-radius: 6px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+#newsletter button{
+    padding: 10px 20px;
+    background-color: #8c3d35;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#newsletter button:hover{
+    background-color: #6f2f28;
+}
+
+/* versao mobile */
+@media (max-width: 480px){
+    main section{
+        padding: 30px 15px;
+    }
+
+    #inicio{
+        flex-direction: column;
+    }
+
+    #inicio img{
+        height: 220px;
+    }
+
+    #escolhas article{
+        flex-basis: 100%;
+    }
+
+    #dicas-home{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #newsletter input{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    #newsletter button{
+        width: 100%;
+    }
+}
+/* ===========================
+   Footer - Sabores da Casa
+   (regras globais — colar em style.css)
+   =========================== */
+
+footer {
+    margin-top: 3rem;
+    padding: 2.5rem 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #d8cdbf;
+    color: #6b5a48;
+    font-size: 0.95rem;
+}
+
+footer p:first-child {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #5b3a29;
+    margin-bottom: 0.4rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer address {
+    font-style: normal;
+    margin: 1.2rem 0;
+    line-height: 1.6;
+}
+
+footer address a {
+    color: #a0522d;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}
+
+footer p:last-child {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #9c8b78;
+}

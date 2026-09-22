@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: #11182f;
+    --roxo: #4f3bd8;
+    --texto: #252525;
+    --fundo: #f5f6f9;
+    --borda: #e5e7ed;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--texto);
+    background: var(--fundo);
+    font-size: 12px;
+}
+
+
+header {
+    height: 110px;
+    padding: 30px 20px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(110deg, #11172e, #252054);
+}
+
+header h1 {
+    font-size: 21px;
+    margin-bottom: 9px;
+}
+
+header p {
+    font-size: 9px;
+    color: #d9d9e5;
+    margin: 3px 0;
+}
+
+header time:first-child {
+    background: #68617e;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+header time:last-child {
+    background: #68617e;
+    padding: 3px 7px;
+    border-radius: 8px;
+}
+
+
+nav {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border-bottom: 1px solid #e8e8ec;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 8px;
+    padding: 6px 9px;
+    border-radius: 12px;
+}
+
+nav a:hover,
+nav a.active {
+    color: white;
+    background: var(--roxo);
+    box-shadow: 0 2px 5px #bbb;
+}
+
+
+main {
+    width: 500px;
+    max-width: calc(100% - 30px);
+    margin: 18px auto;
+}
+
+section,
+aside {
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 7px;
+    padding: 15px;
+    margin-bottom: 13px;
+    box-shadow: 0 2px 7px rgba(25, 35, 60, 0.04);
+}
+
+h2 {
+    font-size: 12px;
+    margin-bottom: 11px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+section > p,
+aside p {
+    font-size: 8px;
+    line-height: 1.65;
+}
+
+
+figure {
+    margin-top: 10px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    color: #888;
+    font-size: 7px;
+    margin-top: 7px;
+}
+
+
+.cards-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.cards-grid li {
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    background: #fafafd;
+    border: 1px solid #e5e5eb;
+    border-left: 2px solid #6548e8;
+    border-radius: 5px;
+    font-size: 8px;
+}
+
+
+.step-list {
+    padding-left: 18px;
+}
+
+.step-list li {
+    padding: 3px 0;
+    font-size: 8px;
+}
+
+
+aside {
+    border-left: 3px solid var(--roxo);
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 4px;
+    padding: 5px 8px;
+    color: #3f35a7;
+    background: #eef0ff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.btn-link:hover {
+    background: #dddfff;
+}
+
+
+footer {
+    min-height: 37px;
+    padding: 13px;
+    text-align: center;
+    color: #aeb4c8;
+    background: var(--azul);
+    font-size: 7px;
+}
+
+footer button {
+    border: 0;
+    padding: 0;
+    color: #9ca9e8;
+    background: none;
+    cursor: pointer;
+    font-size: 7px;
+}
+
+
+dialog {
+    width: 430px;
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.3);
+}
+
+dialog::backdrop {
+    background: rgba(10, 15, 35, .65);
+}
+
+dialog h2 {
+    font-size: 15px;
+}
+
+dialog section {
+    padding: 10px;
+    margin-bottom: 8px;
+    box-shadow: none;
+}
+
+dialog h3 {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+dialog p,
+dialog a {
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+dialog a {
+    color: #4b3bd1;
+}
+
+.btn-close {
+    padding: 7px 12px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background: var(--roxo);
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 25px 15px;
+    }
+
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 6px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    figure img {
+        height: 230px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
